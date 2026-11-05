@@ -4,7 +4,7 @@ import math
 class ParkingFeeCalculator:
     HOURLY_RATE = 10.0
     DAILY_MAX = 80.0
-
+# Tutorial 7 PR auto test
     def calculate_fee(self, hours):
         """
         Calculates parking fee based on hours parked.
