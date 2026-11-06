@@ -30,7 +30,7 @@ class ParkingFeeCalculator:
     def _fee_for_period(self, hours):
         """Calculates fee for a single period up to 24 hours."""
         if hours <= 1:
-            return 0.0
+            return 10.0
 
         billable_hours = math.ceil(hours - 1)
         return min(billable_hours * self.HOURLY_RATE, self.DAILY_MAX)
